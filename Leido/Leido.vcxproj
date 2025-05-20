@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Leido\Log.h" />
     <ClInclude Include="src\Leido.h" />
     <ClInclude Include="src\Leido\Application.h" />
     <ClInclude Include="src\Leido\Core.h" />
     <ClInclude Include="src\Leido\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Leido\Log.cpp" />
     <ClCompile Include="src\Leido\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -67,9 +69,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>LEIDO_PLATFORM_WINDOWS;LEIDO_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Leido\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -84,9 +86,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>LEIDO_PLATFORM_WINDOWS;LEIDO_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Leido\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

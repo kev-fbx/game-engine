@@ -1,0 +1,3 @@
+[submodule "Leido/vendor/spdlog"]
+	path = Leido/vendor/spdlog
+	url = https://github.com/gabime/spdlog
