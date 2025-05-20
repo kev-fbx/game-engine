@@ -28,8 +28,8 @@ namespace Leido
 #define LEIDO_CORE_FATAL(...)	::Leido::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 
 /* Client logmacros */
-#define LEIDO_TRACE(...)	::Leido::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define LEIDO_INFO(...)	::Leido::Log::GetClientLogger()->info(__VA_ARGS__)
-#define LEIDO_WARN(...)	::Leido::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define LEIDO_ERROR(...)	::Leido::Log::GetClientLogger()->error(__VA_ARGS__)
-#define LEIDO_FATAL(...)	::Leido::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define LEIDO_TRACE(...)		::Leido::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define LEIDO_INFO(...)			::Leido::Log::GetClientLogger()->info(__VA_ARGS__)
+#define LEIDO_WARN(...)			::Leido::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define LEIDO_ERROR(...)		::Leido::Log::GetClientLogger()->error(__VA_ARGS__)
+#define LEIDO_FATAL(...)		::Leido::Log::GetClientLogger()->fatal(__VA_ARGS__)
