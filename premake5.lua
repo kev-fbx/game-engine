@@ -27,6 +27,7 @@ project "Leido"
 
 	includedirs
 	{
+		"Leido/src",
 		"Leido/vendor/spdlog/include"
 	}
 

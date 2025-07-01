@@ -4,6 +4,9 @@
     <Filter Include="Leido">
       <UniqueIdentifier>{B274970D-1E89-BFBE-E70A-631E53DEBBEF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Leido\Events">
+      <UniqueIdentifier>{56A468E3-4207-F887-EB8C-303ED7CEC30A}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Leido.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Leido\EntryPoint.h">
       <Filter>Leido</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Leido\Events\ApplicationEvent.h">
+      <Filter>Leido\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Leido\Events\Event.h">
+      <Filter>Leido\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Leido\Events\KeyEvent.h">
+      <Filter>Leido\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Leido\Events\MouseEvent.h">
+      <Filter>Leido\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Leido\Log.h">
       <Filter>Leido</Filter>

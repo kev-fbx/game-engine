@@ -1,5 +1,8 @@
 #include "Application.h"
 
+#include "Leido/Events/ApplicationEvent.h"
+#include "Leido/Log.h"
+
 namespace Leido
 {
 	Application::Application()
@@ -14,6 +17,9 @@ namespace Leido
 
 	void Application::Run()
 	{
+		WindowResizeEvent e(1280, 720);
+		LEIDO_TRACE(e);
+
 		while (true);
 	}
 }
