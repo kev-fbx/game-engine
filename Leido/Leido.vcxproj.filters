@@ -34,6 +34,7 @@
     <ClInclude Include="src\Leido\Log.h">
       <Filter>Leido</Filter>
     </ClInclude>
+    <ClInclude Include="src\leidopch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Leido\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Leido\Log.cpp">
       <Filter>Leido</Filter>
     </ClCompile>
+    <ClCompile Include="src\leidopch.cpp" />
   </ItemGroup>
 </Project>

@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Leido {
 
 	class LEIDO_API MouseMovedEvent : public Event

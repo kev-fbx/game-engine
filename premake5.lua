@@ -19,6 +19,9 @@ project "Leido"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "leidopch.h"
+	pchsource "Leido/src/leidopch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
