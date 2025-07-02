@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Leido/Log.h"
+
 #ifdef LEIDO_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

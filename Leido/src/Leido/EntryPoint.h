@@ -8,7 +8,6 @@ int main(int argc, char** argv)
 {
 	Leido::Log::Init();
 	LEIDO_CORE_WARN("Initalised logger"); 
-	LEIDO_INFO("Hello");
 
 	auto app = Leido::CreateApplication();
 	app->Run();

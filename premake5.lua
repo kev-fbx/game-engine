@@ -11,6 +11,12 @@ workspace "Leido"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Leido/vendor/GLFW/include"
+
+include "Leido/vendor/GLFW"
+
 project "Leido"
 	location "Leido"
 	kind "SharedLib"
@@ -31,7 +37,14 @@ project "Leido"
 	includedirs
 	{
 		"Leido/src",
-		"Leido/vendor/spdlog/include"
+		"Leido/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

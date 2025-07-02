@@ -2,6 +2,9 @@
 
 #include "Leido/Core.h"
 
+#include <string>
+#include <functional>
+
 namespace Leido {
 
 	/*
